@@ -1,5 +1,5 @@
 
-package lektion02søgogerstat;
+package lektion02;
 
 /**
  *
