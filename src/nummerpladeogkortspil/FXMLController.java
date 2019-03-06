@@ -13,31 +13,37 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import opg2_numberplates.NumberPlates;
 
 /**
+ * FXML Controller class
  *
  * @author aalsc
  */
-public class FXMLDocumentController implements Initializable {
-    
-    private Label label;
+public class FXMLController implements Initializable {
+
     @FXML
-    private TextField txtField;
+    private Label lblOutput;
     @FXML
     private Button btnTjek;
     @FXML
-    private Label lblresult;
+    private TextField txtFld;
     
-    @FXML
-    private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
-    }
+    private NumberPlates np;
 
+    /**
+     * Initializes the controller class.
+     */
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        np = new NumberPlates();
     }    
+
+    @FXML
+    private void ButtonActionHandler(ActionEvent event) {
+        lblOutput.setText(np.validate(txtFld.getText()));
+    }
     
 }
