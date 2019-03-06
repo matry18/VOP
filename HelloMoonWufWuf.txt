@@ -1,0 +1,11 @@
+public class HelloMoon wuf wuf {
+
+    public HelloMoon wuf wuf() {
+        System.out.println("HelloMoon wuf wuf");
+    }
+
+
+    public static void main(String[] args) {
+        HelloMoon wuf wuf helloMoon wuf wuf = new HelloMoon wuf wuf();
+    }
+}
