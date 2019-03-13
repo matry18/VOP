@@ -49,10 +49,11 @@ public class SerializableDemo1 implements Serializable {
         list.add(new SerializableDemo1(1, "bbb"));
         list.add(new SerializableDemo1(2, "ccc"));
 
-        File file = new File("Serial.obj");
+        File file = new File("Serial2.obj");
 
         try (ObjectOutputStream oos = file.exists()
                 ? new ObjectOutputStream(new FileOutputStream(file, true)) {
+                    @Override
                     protected void writeStreamHeader() throws IOException {
                         super.reset();
                     }}
@@ -67,7 +68,7 @@ public class SerializableDemo1 implements Serializable {
         System.out.println("List written to file\n");
 
         List<SerializableDemo1> l = null;
-        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("Serial.obj"))) {
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("Serial2 .obj"))) {
 
             try {
                 while (true) {

@@ -29,9 +29,9 @@ public class SocketClient {
         Scanner inputStream = null;
         PrintWriter outputStream = null;
         
-        try {
-            //Connect to server on same machine port 6789
-            Socket clientSocket = new Socket("localhost", 6789);
+        //Connect to server on same machine port 6789
+        try (Socket clientSocket = new Socket("localhost", 6789);) {
+            
             //Set up stream to send/recieve data
             inputStream = new Scanner(new InputStreamReader(clientSocket.getInputStream()));
             outputStream = new PrintWriter(new DataOutputStream(clientSocket.getOutputStream()));

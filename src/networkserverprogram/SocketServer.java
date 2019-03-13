@@ -32,7 +32,8 @@ public class SocketServer {
             System.out.println("Waiting for a connection.");
             serverSocket = new ServerSocket(6789);
             Socket socket = serverSocket.accept();
-            //Connection made, setup stream
+            System.out.println("Connected to: "+socket.getInetAddress() + " : "+socket.getPort());
+            //Connection made, setup streams
             inputStream = new Scanner(new InputStreamReader(socket.getInputStream()));
             outputStream = new PrintWriter(new DataOutputStream(socket.getOutputStream()));
             
