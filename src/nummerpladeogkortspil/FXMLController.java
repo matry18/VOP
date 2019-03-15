@@ -31,6 +31,7 @@ public class FXMLController implements Initializable {
     
     private NumberPlates np;
 <<<<<<< HEAD
+<<<<<<< HEAD
     @FXML
     private TextArea txtOutputArea;
     @FXML
@@ -41,6 +42,8 @@ public class FXMLController implements Initializable {
 
     private DeckOfCards deckOfCards;
     ToggleGroup btnGroup = new ToggleGroup();
+=======
+>>>>>>> parent of 6cabb98... RBToggleGroup
 =======
 >>>>>>> parent of 6cabb98... RBToggleGroup
 
@@ -59,6 +62,7 @@ public class FXMLController implements Initializable {
         lblOutput.setText(np.validate(txtFld.getText()));
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     @FXML
     private void btnBlandButtonActionHandler(ActionEvent event) {
@@ -72,6 +76,8 @@ public class FXMLController implements Initializable {
         txtOutputArea.setText(deckOfCards.toString());
     }
 =======
+=======
+>>>>>>> parent of 6cabb98... RBToggleGroup
     
 >>>>>>> parent of 6cabb98... RBToggleGroup
 }

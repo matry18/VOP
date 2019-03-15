@@ -26,11 +26,15 @@
           <Tab text="Kortspil">
             <content>
 <<<<<<< HEAD
+<<<<<<< HEAD
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
                         <TextArea fx:id="txtOutputArea" layoutX="207.0" layoutY="37.0" prefHeight="200.0" prefWidth="200.0" />
                         <Button fx:id="btnBland" layoutX="92.0" layoutY="285.0" mnemonicParsing="false" onAction="#btnBlandButtonActionHandler" text="Bland" />
                      </children></AnchorPane>
+=======
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+>>>>>>> parent of 6cabb98... RBToggleGroup
 =======
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
 >>>>>>> parent of 6cabb98... RBToggleGroup
