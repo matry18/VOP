@@ -46,7 +46,7 @@ public class FXMLController implements Initializable {
     private RadioButton rb250;
 
     private DeckOfCards deckOfCards;
-ToggleGroup btnGroup = new ToggleGroup();
+    ToggleGroup btnGroup = new ToggleGroup();
 
     /**
      * Initializes the controller class.
@@ -78,18 +78,4 @@ ToggleGroup btnGroup = new ToggleGroup();
         }
         txtOutputArea.setText(deckOfCards.toString());
     }
-
-
-@FXML
-        private void RB50ButtonActionHandler(ActionEvent event) {
-    }
-
-    @FXML
-        private void RB100ButtonActionHandler(ActionEvent event) {
-    }
-
-    @FXML
-        private void RB250ButtonActionHandler(ActionEvent event) {
-    }
-    
 }
