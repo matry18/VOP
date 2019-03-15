@@ -12,8 +12,12 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleGroup;
 import opg2_numberplates.NumberPlates;
+import opg3_playingcards.DeckOfCards;
 
 /**
  * FXML Controller class
@@ -28,9 +32,8 @@ public class FXMLController implements Initializable {
     private Button btnTjek;
     @FXML
     private TextField txtFld;
-    
+
     private NumberPlates np;
-<<<<<<< HEAD
     @FXML
     private TextArea txtOutputArea;
     @FXML
@@ -41,24 +44,25 @@ public class FXMLController implements Initializable {
 
     private DeckOfCards deckOfCards;
     ToggleGroup btnGroup = new ToggleGroup();
-=======
->>>>>>> parent of 6cabb98... RBToggleGroup
 
     /**
      * Initializes the controller class.
      */
-    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
         np = new NumberPlates();
-    }    
+        deckOfCards = new DeckOfCards();
+        txtOutputArea.setText(deckOfCards.toString());
+        rb50.setToggleGroup(btnGroup);
+        rb100.setToggleGroup(btnGroup);
+        rb250.setToggleGroup(btnGroup);
+    }
 
     @FXML
     private void ButtonActionHandler(ActionEvent event) {
         lblOutput.setText(np.validate(txtFld.getText()));
     }
-<<<<<<< HEAD
 
     @FXML
     private void btnBlandButtonActionHandler(ActionEvent event) {
@@ -71,7 +75,4 @@ public class FXMLController implements Initializable {
         }
         txtOutputArea.setText(deckOfCards.toString());
     }
-=======
-    
->>>>>>> parent of 6cabb98... RBToggleGroup
 }
