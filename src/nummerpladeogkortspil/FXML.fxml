@@ -30,6 +30,9 @@
                      <children>
                         <TextArea fx:id="txtOutputArea" layoutX="207.0" layoutY="37.0" prefHeight="200.0" prefWidth="200.0" />
                         <Button fx:id="btnBland" layoutX="92.0" layoutY="285.0" mnemonicParsing="false" onAction="#btnBlandButtonActionHandler" text="Bland" />
+                        <RadioButton fx:id="rb50" layoutX="201.0" layoutY="289.0" mnemonicParsing="false" onAction="#RB50ButtonActionHandler" text="50" />
+                        <RadioButton fx:id="rb100" layoutX="335.0" layoutY="289.0" mnemonicParsing="false" onAction="#RB100ButtonActionHandler" text="100" />
+                        <RadioButton fx:id="rb250" layoutX="452.0" layoutY="289.0" mnemonicParsing="false" onAction="#RB250ButtonActionHandler" text="250" />
                      </children></AnchorPane>
             </content>
           </Tab>

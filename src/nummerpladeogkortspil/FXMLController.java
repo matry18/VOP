@@ -38,8 +38,11 @@ public class FXMLController implements Initializable {
     private TextArea txtOutputArea;
     @FXML
     private Button btnBland;
+    @FXML
     private RadioButton rb50;
+    @FXML
     private RadioButton rb100;
+    @FXML
     private RadioButton rb250;
 
     private DeckOfCards deckOfCards;
