@@ -80,16 +80,5 @@ ToggleGroup btnGroup = new ToggleGroup();
     }
 
 
-@FXML
-        private void RB50ButtonActionHandler(ActionEvent event) {
-    }
-
-    @FXML
-        private void RB100ButtonActionHandler(ActionEvent event) {
-    }
-
-    @FXML
-        private void RB250ButtonActionHandler(ActionEvent event) {
-    }
     
 }
