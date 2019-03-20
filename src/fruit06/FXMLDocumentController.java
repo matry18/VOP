@@ -43,7 +43,6 @@ public class FXMLDocumentController implements Initializable {
     private ImageView imgView2;
     @FXML
     private ImageView imgView3;
-    private int count;
     private Thread t1;
     private Thread t2;
     private Thread t3;
