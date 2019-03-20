@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package lektion.pkg11.flashingtext;
+package flashingtext;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -37,53 +37,49 @@ public class FXMLDocumentController implements Initializable {
     private RadioButton rb200;
     @FXML
     private RadioButton rb400;
+    private Thread thread;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        thread.setDaemon(true);
-        thread.start();
 
     }
 
-
-
-    private Thread thread = new Thread(new Runnable() {
-        @Override
-        public void run() {
-            try {
-                while (true) {
-                    if (funLabel.getText().trim().length() == 0) {
-                        text = "Programming is fun";
-                    } else {
-                        text = "";
-                    }
-                    System.out.println("Flash: " + text);
-                    Platform.runLater(new Runnable() {
-                        @Override
-                        public void run() {
-                            funLabel.setText(text);
-                        }
-                    });
-
-                    if (rb100.isSelected()) { 
-                        Thread.sleep(100);
-                    } else if (rb400.isSelected()) {
-                        Thread.sleep(400);
-                    }
-                    else {
-                        Thread.sleep(200);
-                    }
-                }
-            } catch (InterruptedException ex) {
-            }
-
-        }
-
-    });
-
     @FXML
     private void handleStartButtonAction(ActionEvent event) {
-        
+        thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    while (true) {
+                        if (funLabel.getText().trim().length() == 0) {
+                            text = "Programming is fun";
+                        } else {
+                            text = "";
+                        }
+                        System.out.println("Flash: " + text);
+                        Platform.runLater(new Runnable() { //runable thread med en ny runnable i sig
+                            @Override
+                            public void run() {
+                                funLabel.setText(text);
+                            }
+                        });
+
+                        if (rb100.isSelected()) {
+                            Thread.sleep(100);
+                        } else if (rb400.isSelected()) {
+                            Thread.sleep(400);
+                        } else {
+                            Thread.sleep(200);
+                        }
+                    }
+                } catch (InterruptedException ex) {
+                }
+
+            }
+
+        });
+        thread.setDaemon(true);
+        thread.start();
     }
 
     @FXML

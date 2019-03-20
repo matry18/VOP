@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package flashingtext;
+package fruit06;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -13,9 +13,9 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author erso
+ * @author aalsc
  */
-public class Lektion11FlashingText extends Application {
+public class Fruit06 extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
