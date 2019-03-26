@@ -20,7 +20,7 @@ public class DB_961 {
         ResultSet rs = null;
         try {
             Class.forName("org.postgresql.Driver");
-            Connection myCon = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Computer", "postgres", "password"); //obs. husk at ændre password
+            Connection myCon = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Computer", "postgres", "PasswordpgAdmin4"); //obs. husk at ændre password
             rs = myCon.createStatement().executeQuery(query);
             for (int i = 1; i <= rs.getMetaData().getColumnCount(); i++) {
                 System.out.print(rs.getMetaData().getColumnLabel(i) + "\t");

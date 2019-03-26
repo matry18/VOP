@@ -22,7 +22,7 @@ public class JavaDB {
         String table = "\"MovieExec\"";
         try {
             Class.forName("org.postgresql.Driver");
-            Connection myCon = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Movies", "postgres", "Password");//obs. husk at ændre password
+            Connection myCon = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Movies", "postgres", "PasswordpgAdmin4");//obs. husk at ændre password
             ResultSet rs = myCon.createStatement().executeQuery("Select * from " + table);
             while (rs.next()) {
                
