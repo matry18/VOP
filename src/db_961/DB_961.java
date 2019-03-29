@@ -20,7 +20,8 @@ public class DB_961 {
         ResultSet rs = null;
         try {
             Class.forName("org.postgresql.Driver");
-            Connection myCon = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Computer", "postgres", "password"); //obs. husk at ændre password
+            Connection myCon = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Computer", "postgres", "password"); //obs. husk at ændre password. 
+            //Alternativt kunne der være valgt en URL i stedet for localhoast
             rs = myCon.createStatement().executeQuery(query);
             for (int i = 1; i <= rs.getMetaData().getColumnCount(); i++) {
                 System.out.print(rs.getMetaData().getColumnLabel(i) + "\t");
@@ -57,7 +58,8 @@ public class DB_961 {
                 System.out.println("Programmet afsluttes.");
                 break;
             }
-            String query = "select \"PC\".price, \"Product\".maker, \"Product\".model, \"PC\".speed From \"Product\" inner join \"PC\" on \"Product\".model = \"PC\".model ORDER BY ABS(price - " + pris + ") Limit 1;";
+            String query = "select \"PC\".price, \"Product\".maker, \"Product\".model, \"PC\".speed "
+                    + "From \"Product\" inner join \"PC\" on \"Product\".model = \"PC\".model ORDER BY ABS(price - " + pris + ") Limit 1;";
             sql(query);
             
         }
