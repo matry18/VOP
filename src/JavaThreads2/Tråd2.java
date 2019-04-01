@@ -39,6 +39,8 @@ public class Tråd2 {
     Thread t2 = new Thread(new Runner());
     t1.start();
     t2.start();
+    t1.setDaemon(true);
+    t2.setDaemon(true);
     }
 
 }

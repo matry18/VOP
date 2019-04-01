@@ -21,8 +21,7 @@ import org.junit.*;
 public class LoanTest {
     
     public LoanTest() {
-        @Before
-        
+  
     }
     
     @BeforeClass

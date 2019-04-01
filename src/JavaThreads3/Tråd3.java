@@ -31,6 +31,7 @@ public class Tråd3 {
             }
         });
         t1.start();
+        t1.setDaemon(true);
         {
 
         }
