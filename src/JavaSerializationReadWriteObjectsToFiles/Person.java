@@ -1,7 +1,7 @@
 /*Serialization betyder at konvertere binær data fra en fil til læsbar data,
 eller konvertere læsbar data til binær data og gemme det i en fil
  */
-package SerializationReadWriteObjectsToFiles;
+package JavaSerializationReadWriteObjectsToFiles;
 
 import java.io.Serializable;
 
