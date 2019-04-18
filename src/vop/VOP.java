@@ -7,7 +7,7 @@ package vop;
 
 /**
  *
- * @author aalsc
+ * @author Mathias
  */
 public class VOP {
 
