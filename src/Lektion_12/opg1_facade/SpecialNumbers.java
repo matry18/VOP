@@ -1,4 +1,4 @@
-package opg1_facade;
+package Lektion_12.opg1_facade;
 
 /**
  *

@@ -1,4 +1,4 @@
-package opg2_polymorphi;
+package Lektion_12.opg2_polymorphi;
 
 /**
  *

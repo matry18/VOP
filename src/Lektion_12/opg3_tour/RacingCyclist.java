@@ -1,4 +1,4 @@
-package opg3_tour;
+package Lektion_12.opg3_tour;
 
 /**
  *

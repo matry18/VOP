@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package lesson_12;
+package Lektion_12.lesson_12;
 
 import java.net.URL;
 import java.util.LinkedList;
@@ -17,12 +17,12 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
-import opg1_facade.SpecialNumbers;
-import opg2_polymorphi.CheckerInterface;
-import opg2_polymorphi.EvenChecker;
-import opg2_polymorphi.NumberCheckerFacade;
-import opg2_polymorphi.PrimeChecker;
-import opg2_polymorphi.SquareChecker;
+import Lektion_12.opg1_facade.SpecialNumbers;
+import Lektion_12.opg2_polymorphi.CheckerInterface;
+import Lektion_12.opg2_polymorphi.EvenChecker;
+import Lektion_12.opg2_polymorphi.NumberCheckerFacade;
+import Lektion_12.opg2_polymorphi.PrimeChecker;
+import Lektion_12.opg2_polymorphi.SquareChecker;
 
 /**
  *
