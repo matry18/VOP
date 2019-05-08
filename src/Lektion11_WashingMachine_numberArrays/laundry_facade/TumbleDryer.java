@@ -1,4 +1,4 @@
-package laundry_facade;
+package Lektion11_WashingMachine_numberArrays.laundry_facade;
 
 /**
  * VOP eksamen F15 Kodeskelet til TumbleDryer-klassen i opg 3.

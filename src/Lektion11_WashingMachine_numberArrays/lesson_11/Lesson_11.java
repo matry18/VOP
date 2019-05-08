@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package lesson_11;
+package Lektion11_WashingMachine_numberArrays.lesson_11;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

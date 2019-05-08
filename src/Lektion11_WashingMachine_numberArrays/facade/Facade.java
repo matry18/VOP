@@ -1,4 +1,4 @@
-package facade;
+package Lektion11_WashingMachine_numberArrays.facade;
 
 import java.util.Arrays;
 import java.util.Random;

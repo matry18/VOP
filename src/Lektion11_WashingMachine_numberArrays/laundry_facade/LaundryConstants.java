@@ -1,4 +1,4 @@
-package laundry_facade;
+package Lektion11_WashingMachine_numberArrays.laundry_facade;
 
 /**
  * VOP Eksamen F15

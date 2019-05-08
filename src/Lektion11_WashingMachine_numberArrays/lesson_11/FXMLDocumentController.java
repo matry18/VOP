@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package lesson_11;
+package Lektion11_WashingMachine_numberArrays.lesson_11;
 
-import facade.Facade;
+import Lektion11_WashingMachine_numberArrays.facade.Facade;
 import java.net.URL;
 import java.util.Arrays;
 import java.util.ResourceBundle;
@@ -18,7 +18,7 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
-import laundry_facade.LaundrySingleton;
+import Lektion11_WashingMachine_numberArrays.laundry_facade.LaundrySingleton;
 
 /**
  *

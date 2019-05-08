@@ -1,5 +1,5 @@
 
-package laundry_facade;
+package Lektion11_WashingMachine_numberArrays.laundry_facade;
 
 import java.util.HashMap;
 import java.util.Map;
