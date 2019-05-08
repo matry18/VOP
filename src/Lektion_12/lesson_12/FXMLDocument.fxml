@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="325.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lesson_12.FXMLDocumentController">
+   <children>
+      <TabPane layoutX="173.0" layoutY="63.0" prefHeight="325.0" prefWidth="500.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Special Numbers">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="59.0" layoutY="51.0" text="Input Number" />
+                        <TextField fx:id="txtInput" layoutX="145.0" layoutY="47.0" />
+                        <TextField fx:id="txtOutput" editable="false" layoutX="147.0" layoutY="218.0" prefHeight="25.0" prefWidth="296.0" />
+                        <Label layoutX="59.0" layoutY="222.0" text="Result:" />
+                        <Button fx:id="btnIsEven" layoutX="108.0" layoutY="123.0" mnemonicParsing="false" onAction="#handleIsEvenButtonAction" text="isEven()" />
+                        <Button fx:id="btnIsPrime" layoutX="231.0" layoutY="123.0" mnemonicParsing="false" onAction="#handleIsPrimeButtonAction" text="isPrime()" />
+                        <Button fx:id="btnIsSquare" layoutX="365.0" layoutY="123.0" mnemonicParsing="false" onAction="#handleIsSquareButtonAction" text="isSquare()" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Check Numbers">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="63.0" layoutY="28.0" text="Min:" />
+                        <Label layoutX="222.0" layoutY="28.0" text="Max:" />
+                        <Label layoutX="367.0" layoutY="28.0" text="Find" />
+                        <TextField fx:id="txtInputMin" layoutX="89.0" layoutY="24.0" prefHeight="25.0" prefWidth="81.0" />
+                        <TextField fx:id="txtInputMax" layoutX="249.0" layoutY="24.0" prefHeight="25.0" prefWidth="86.0" />
+                        <RadioButton fx:id="rbEven" layoutX="379.0" layoutY="79.0" mnemonicParsing="false" onAction="#handleRadioButtonAction" text="Lige numre">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="toggleGroup" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="rbPrime" layoutX="379.0" layoutY="129.0" mnemonicParsing="false" onAction="#handleRadioButtonAction" text="Primtal" toggleGroup="$toggleGroup" />
+                        <RadioButton fx:id="rbSquare" layoutX="379.0" layoutY="187.0" mnemonicParsing="false" onAction="#handleRadioButtonAction" text="Potensen af 2" toggleGroup="$toggleGroup" />
+                        <TextArea fx:id="txtCNOutput" editable="false" layoutX="89.0" layoutY="69.0" prefHeight="200.0" prefWidth="200.0" wrapText="true" />
+                        <Button fx:id="btnClear" layoutX="394.0" layoutY="237.0" mnemonicParsing="false" onAction="#handleClearButtonAction" text="Clear" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
