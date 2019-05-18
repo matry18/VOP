@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Lektion_07_Call_Back_Interface_GUI;
+package Lektion_07_CallBackInterface_GUI;
 
-import Lektion_07_Call_Back_Interface_Facade.CallBackInterface;
-import Lektion_07_Call_Back_Interface_Facade.FacadeWithCallback;
+import Lektion_07_CallBackInterface_Facade.CallBackInterface;
+import Lektion_07_CallBackInterface_Facade.FacadeWithCallback;
 import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;

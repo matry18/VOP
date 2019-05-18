@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Lektion_07_Call_Back_Interface_Facade;
+package Lektion_07_CallBackInterface_Facade;
 
 import java.util.Random;
 
