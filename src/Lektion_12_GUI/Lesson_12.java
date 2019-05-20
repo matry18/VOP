@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Lektion_12.lesson_12;
+package Lektion_12_GUI;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

@@ -1,4 +1,4 @@
-package Lektion_12.opg1_facade;
+package Lektion_12_Facade;
 
 /**
  *
@@ -10,12 +10,12 @@ public class SpecialNumbers
     public boolean isEven(int x)
     {
         if (x % 2 == 0) {
-            return true;
+            return true; //skal returnere true hvis x er et lige tal
         }
         return false;
     }
 
-    public boolean isPrime(int x)
+    public boolean isPrime(int x) //skal returnere true hvis x er et primtal
     { int y = (int) ((Math.sqrt(x))+1);
         for (int i = 2; i < y; i++) {
             if(x%i == 0) {
@@ -25,7 +25,7 @@ public class SpecialNumbers
         return true;
     }
 
-    public boolean isSquare(int x)
+    public boolean isSquare(int x) //skal returnere true, hvis x er et kvadrattal
     {
         double y = Math.sqrt(x);
         return y == (int) y;

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Lektion_12.opg3_tour;
+package Lektion_12_TourDeFrance;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -29,10 +29,10 @@ public class TourDeFranceMain {
     /**
      * @param args the command line arguments
      */
-    private List<RacingCyclist> list;
-    private File fileName;
+    private List<RacingCyclist> list; //variabel
+    private File fileName; //Variale af typen File
 
-    public TourDeFranceMain(String fileName) {
+    public TourDeFranceMain(String fileName) { //comstructor der tager en fil som argument
         this.fileName = new File(fileName);
         this.list = new ArrayList<>();
     }
@@ -45,12 +45,11 @@ public class TourDeFranceMain {
 
         try (Scanner scan = new Scanner(fileName)) {
 
-            while (scan.hasNextLine()) {
+            while (scan.hasNextLine()) { //indlæser én linje ad gangen og for hver linje
                 String line = scan.nextLine();
-                String[] doc = line.split("\t");
-                // Scanner line = new Scanner(scan.nextLine()).useDelimiter("\t");
-                RacingCyclist rc = new RacingCyclist(doc[0], doc[1], doc[2], doc[3], Integer.parseInt(doc[4]), Integer.parseInt(doc[5]));
-                list.add(rc);
+                String[] doc = line.split("\t"); //indlæser frem til tabulator, men kunne også have været anden delimiter
+                RacingCyclist rc = new RacingCyclist(doc[0], doc[1], doc[2], doc[3], Integer.parseInt(doc[4]), Integer.parseInt(doc[5])); //instansen oprettes med givne parametre i arrayListens index
+                list.add(rc);//instansen tilføjes listen
 
             }
 
@@ -60,11 +59,11 @@ public class TourDeFranceMain {
     }
 
     public void sort() {
-        Collections.sort(list);
+        Collections.sort(list); //sortering af listen
     }
 
     public Set<RacingCyclist> makeSortedSet(Comparator comp) {
-        Set<RacingCyclist> sortedSet = new TreeSet<>(comp);
+        Set<RacingCyclist> sortedSet = new TreeSet<>(comp);//opretter et sorteret Set
         sortedSet.addAll(list);
         
         return sortedSet;

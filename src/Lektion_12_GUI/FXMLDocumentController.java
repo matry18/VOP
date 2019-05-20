@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Lektion_12.lesson_12;
+package Lektion_12_GUI;
 
 import java.net.URL;
 import java.util.LinkedList;
@@ -17,12 +17,12 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
-import Lektion_12.opg1_facade.SpecialNumbers;
-import Lektion_12.opg2_polymorphi.CheckerInterface;
-import Lektion_12.opg2_polymorphi.EvenChecker;
-import Lektion_12.opg2_polymorphi.NumberCheckerFacade;
-import Lektion_12.opg2_polymorphi.PrimeChecker;
-import Lektion_12.opg2_polymorphi.SquareChecker;
+import Lektion_12_Facade.SpecialNumbers;
+import Lektion_12_Polymorphi.CheckerInterface;
+import Lektion_12_Polymorphi.EvenChecker;
+import Lektion_12_Polymorphi.NumberCheckerFacade;
+import Lektion_12_Polymorphi.PrimeChecker;
+import Lektion_12_Polymorphi.SquareChecker;
 
 /**
  *
@@ -42,7 +42,7 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private Button btnIsSquare;
 
-    SpecialNumbers sn;
+    SpecialNumbers sn; //instans af variablen
     @FXML
     private TextField txtInputMin;
     @FXML
@@ -64,7 +64,7 @@ public class FXMLDocumentController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        sn = new SpecialNumbers();
+        sn = new SpecialNumbers(); //intialisere variablen
         ncf = new NumberCheckerFacade();
         rbEven.setUserData(new EvenChecker());
         rbPrime.setUserData(new PrimeChecker());

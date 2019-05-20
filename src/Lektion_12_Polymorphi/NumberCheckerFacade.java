@@ -1,4 +1,4 @@
-package Lektion_12.opg2_polymorphi;
+package Lektion_12_Polymorphi;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -10,7 +10,7 @@ import java.util.List;
 public class NumberCheckerFacade
 {
 
-    public List<Integer> checkNumbers(int min, int max, CheckerInterface checker)
+    public List<Integer> checkNumbers(int min, int max, CheckerInterface checker) //implemeterer metoden og tilføjer alle true-check til listen og returnerer denne
     {
         LinkedList<Integer> trueList = new LinkedList<>();
         for (int i = min; i <= max; i++) {

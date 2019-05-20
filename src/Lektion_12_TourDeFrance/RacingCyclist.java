@@ -1,4 +1,4 @@
-package Lektion_12.opg3_tour;
+package Lektion_12_TourDeFrance;
 
 /**
  *
@@ -14,6 +14,7 @@ public class RacingCyclist implements Comparable<RacingCyclist> {
     private int mountains;
     private int points;
 
+    //En constructor der tager variable som parametre
     public RacingCyclist(String name, String team, String country, String time, int mountains, int points) {
         this.name = name;
         this.team = team;
@@ -28,6 +29,8 @@ public class RacingCyclist implements Comparable<RacingCyclist> {
         return name + " " + team + " " + country + " " + time + " " + mountains + " " + points + "\n";
     }
 
+    //compareTo-metode der sorterer rytterne stigende efter tidstab
+    //Hvis flere ryttere har samme tidstab sorteres efter navn
     @Override
     public int compareTo(RacingCyclist o) {
         int compare = this.time.compareTo(o.getTime());
@@ -41,6 +44,8 @@ public class RacingCyclist implements Comparable<RacingCyclist> {
 
     }
 
+    
+    //Get-metoder til alle parametre
     public String getName() {
         return name;
     }

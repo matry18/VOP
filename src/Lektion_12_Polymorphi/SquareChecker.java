@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Lektion_12.opg2_polymorphi;
+package Lektion_12_Polymorphi;
 
 /**
  *
@@ -12,7 +12,7 @@ package Lektion_12.opg2_polymorphi;
 public class SquareChecker implements CheckerInterface {
 
     @Override
-    public boolean check(int i) {
+    public boolean check(int i) {//Skal returnere true, hvis i er et kvadrattal
         double y = Math.sqrt(i);
         return y == (int) y;
     }
