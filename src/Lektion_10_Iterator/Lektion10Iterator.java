@@ -5,7 +5,7 @@ in ascending order (i.e., 1,2, . . ., 10m) in an ArrayList, displays the executi
 time taken to traverse the list, and searches for the 10 millionth element using
 the get(index) vs using the iterator method.
  */
-package lektion10iterator;
+package Lektion_10_Iterator;
 
 import java.util.ArrayList;
 import java.util.Date;

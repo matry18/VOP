@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package lektion10stack_matchingbrackets;
+package Lektion_10_Stack_MatchingBrackets;
 
 import java.io.File;
 import java.io.FileNotFoundException;

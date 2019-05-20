@@ -1,4 +1,4 @@
-package lektion10_boysandgirls;
+package Lektion_10_BoysAndGirls;
 
 import java.util.Arrays;
 
