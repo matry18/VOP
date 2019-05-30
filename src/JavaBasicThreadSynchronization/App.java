@@ -35,8 +35,8 @@ public class App {
      */
     public static void main(String[] args) {
         Processor proc1 = new Processor();
-        proc1.start();
         proc1.setDaemon(true);
+        proc1.start();
         
         System.out.println("Pres Enter to stop!");
         Scanner scan = new Scanner(System.in);
